@@ -1,0 +1,22 @@
+.container {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-yellow {
+  width: 100%;
+  height: 100px;
+  background: yellow;
+}
+.bottom-yellow {
+  width: 100px;
+  height: 300px;
+  background: yellow;
+}
+.bottom-blue {
+  height: 300px;
+  width: 350px;
+  background: blue;
+}
