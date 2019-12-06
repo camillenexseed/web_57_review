@@ -50,15 +50,18 @@ const dinner = 100;
 //   }
 // }
 
+
+// 画像以外の描画（レンダリング）が終わった後に実行
+// レンダリングとはHTML/CSSなどのコードを解析したのちウェブブラウザーに表示されること
 document.addEventListener('DOMContentLoaded', function () {
-  var ctx = document.getElementById("myChart");
-  var myChart = new Chart(ctx, {
+  const ctx = document.getElementById("myChart");
+  const myChart = new Chart(ctx, {
     type: 'bar',
     data: {
       labels: ["赤", "青", "黄", "緑", "紫", "橙"],
       datasets: [{
         label: '得票数',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [100, 19, 3, 5, 2, 3],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',

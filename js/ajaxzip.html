@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <label>郵便番号(3桁と4桁)</label>
+    <input type="text" name="zip21" size="4" maxlength="3"> － <input type="text" name="zip22" size="5" maxlength="4" onKeyUp="AjaxZip3.zip2addr('zip21','zip22','pref21','addr21','strt21');">
+    <label>都道府県</label>
+    <input type="text" name="pref21" size="40">
+    <label>市区町村</label>
+    <input type="text" name="addr21" size="40">
+    <label>以降の住所</label>
+    <input type="text" name="strt21" size="40">
+  </form>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- ajaxzip3 -->
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js"></script>
+
+</body>
+</html>
